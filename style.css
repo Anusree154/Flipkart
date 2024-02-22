@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    display:grid;
+    width: 100%;
+    height: 100%;
+    
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #236ee7;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+     position:sticky;
+     top: 0;
+    z-index: 1;
+   
+    
+}
+nav .logo-container{
+    margin-top: 5px;
+    margin-left: 100px;
+    position: relative;
+}
+.search-bar {
+    height: 35px;
+   width: 400px;
+   background-color: white;
+   margin: 0px 15px;
+   padding:8px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -7px -7px 10px rgba(0,0,0,.1);
+  border-radius: 2px;
+   
+}
+.search-bar input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+nav .b1{
+  
+   width: 120px;
+   height: 30px;
+   background-color: white;
+   padding: 5x 40px;
+   color: #236ee7;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   cursor: pointer;
+   font-family: 'Roboto',sans-serif;
+   
+    
+}
+nav .list ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+   margin: 0px 20px;
+   
+   
+}
+nav .list ul li{
+    margin: 0px 25px;
+  
+    font-weight: bold;
+    font-size: 16px;
+    opacity: .7;
+    
+  
+}
+nav  .fa{
+    margin-right: 8px;
+}
+/* first-part */
+.menu-bar{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+    color: #000;
+    line-height: 1.8;
+    
+}
+.menu-bar img{
+    width: 60px;
+    flex: 2;
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+.menu-bar label{
+   
+    margin: 30px 25px ;
+align-items: center; 
+cursor: pointer;
+
+}
+.menu-bar label:hover{
+    color:#236ee7;
+}
+.ads{
+    width: 100%;
+    height:250px ;
+    margin: 10px 5px;
+    
+}
+.ads img{
+    
+    max-height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+   
+}
+
+.bestElectronic-container{
+    background-color:rgb(238,234,234);
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    padding: .1em;
+    
+}
+.left-part{
+    height: 100%;
+    width: 79%;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+    display: flex;
+
+}
+.left-background-card{
+    width: 19%;
+    height: 100%;
+   background-color: white;
+   background-image:url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90");
+   object-fit: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size:100% 50%;
+}
+.left-background-card p{
+    font-size: 30px;
+   font-weight: 400;
+   word-wrap: break-word;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+.left-background-card button{
+    background-color: #236ee7;
+    color: white;
+    font-size: 16px;
+    
+    border: none;
+    padding: 6px 8px;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+ .leftpart-card-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+
+.card-product{
+    width: 250px;
+    padding: 1em;
+    height: 150px;
+    text-align: center;
+    /* background-color: white; */
+   
+   
+}
+.card-product:hover{
+    transform: translateY(10px);
+    animation: moveup 0.5s linear forwards;
+}
+.card-product-name {
+   margin: 8px 0px;
+   font-size: 1.1rem;
+   cursor: pointer;
+    
+}
+.card-product img{
+    height: 200px;
+    cursor: pointer;
+}
+.card-product-price{
+    margin: 4px 0 ;
+    color: #388E3C;
+    cursor: pointer;
+}
+.card-product-desc{
+    margin:2px  0;
+    cursor: pointer;
+    color: #878787;
+}
+
+.right-part{
+    height: 100%;
+    width: 19%;
+    background-color:white ;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+    
+}
+.right-part img{
+    width: 100%;
+    height: 100%;
+   padding: 0.5em ;
+   cursor: pointer;
+}
+.toys-container{
+    background-color:rgb(238, 234, 234);
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    padding: .5em;
+     
+}
+
+.left-background-card1{
+    width: 15%;
+   background-color: white;
+   background-image:url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90);
+   object-fit: cover;
+   /* margin-left:6px; */
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size:100% 50%;
+}
+.left-background-card1 p{
+    font-size: 30px;
+   font-weight: 400;
+   word-wrap: break-word;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+    
+
+}
+
+.left-background-card1 button{
+    background-color:#236ee7;
+    color: white;
+    font-size: 16px;
+    
+    border: none;
+    padding: 6px 8px;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.leftpart-card-container1{
+    width: 85%;
+    margin-right: 6px;
+   background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
+       
+    }
+    .card-product1{
+        width: 182px;
+        padding: 1em;
+        height: 150px;
+        text-align: center;
+        margin: 0 2px;
+        justify-content: space-around;
+        /* background-color: white; */
+       
+       
+    }
+    .card-product1:hover{
+        transform: translateY(10px);
+        animation: moveup 0.5s linear forwards;
+    }
+    .card-product-name1 {
+        margin: 8px 0px;
+        font-size: 1.1rem;
+        cursor: pointer;
+         
+     }
+     .card-product1 img{
+         height: 220px;
+         cursor: pointer;
+     }
+     .card-product-price1{
+         margin: 4px 0 ;
+         color: #388E3C;
+         cursor: pointer;
+     }
+     .card-product-desc1{
+         margin:2px  0;
+         cursor: pointer;
+         
+     }
+     .gift-container{
+        background-color:rgb(238,234,234);
+        position: relative;
+        width: 100%;
+        height: 360px;
+        display: flex;
+        padding: .5em;
+    }
+     .left-background-card2{
+        width: 15%;
+       background-color: white;
+       object-fit: cover;
+       margin-left:6px;
+       background-repeat: no-repeat;
+       background-position: bottom;
+       background-size:100% 50%;
+    }
+    .left-background-card2 p{
+        font-size: 30px;
+       font-weight: 400;
+       word-wrap: break-word;
+        text-align: center;
+        line-height: 1.4;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-family: 'Roboto',sans-serif;
+    
+    }
+    
+    .left-background-card2 button{
+        background-color:#236ee7;
+        color: white;
+        font-size: 16px;
+        
+        border: none;
+        padding: 6px 8px;
+        font-weight: bold;
+        margin-left: 55px;
+        margin-top: 20px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+        cursor: pointer;
+    }
+    .leftpart-card-container2{
+        width: 85%;
+        margin-right: 6px;
+       background-color: #fff;
+            display: flex;
+           
+           
+        }
+       .card-product2{
+            width: 205px;
+            padding: 1em;
+            height: 150px;
+            text-align: center;
+            justify-content: space-around;           
+        }
+        .card-product2:hover{
+            transform: translateY(10px);
+            animation: moveup 0.5s linear forwards;
+        }
+          .card-product-name2 {
+            margin: 8px 0px;
+            font-size: 1.1rem;
+            cursor: pointer;
+             
+         }
+           .card-product2 img{
+             height: 220px;
+             cursor: pointer;
+         }
+          .card-product-price2{
+             margin: 4px 0 ;
+             color: #388E3C;
+             cursor: pointer;
+         }
+            .card-product-desc2{
+             margin:2px  0;
+             cursor: pointer;
+             
+         }
+footer{
+    background-color:  #212121;
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 6fr 6fr;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+.left-panel{
+    display: grid;
+    grid-template-columns: 3fr 3fr 4fr 3fr;
+}
+.right-panel{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+   padding-left: 30px;
+    border-left: 1px solid white;
+    word-wrap: break-word;
+}
+.footer-title{
+    color:  #878787;
+    padding: 20px;
+    font-size: 13px;
+   
+    
+}
+.footer-title p{
+    text-align: justify;
+    font-size: 10px;
+    width: 50px;
+    
+}
+.footer-title~div{
+    margin-bottom: 10px;
+   
+}
+.last-section{
+    width: 100%;
+    height: 10vh;
+    background-color: #212121;
+    display: flex;
+    color: white;
+    
+    
+    
+}
+.last-section .item{
+    margin: 10px 40px;
+    
+}
+/* .card{   
+    width: 180px;
+    height: 300px;
+    position: relative;
+   border-radius: 10px;
+    border: 1px solid white;
+    box-shadow:3px 5px 5px rgba(1,1,1,0.5) ;
+    
+    
+}
+.card1{
+    background-image: url(images/gadgets.png);
+    width: 200px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    
+    border-radius: 10px;
+   
+}
+
+.card:hover{
+    transform: translateY(10px);
+    animation: moveup 0.5s linear forwards;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} */
